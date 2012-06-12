@@ -85,7 +85,8 @@ int musb_platform_init(void)
 {
 	u32  revision;
 	/* enable USB VBUS */
-#if !defined(DAVINCI_DM365EVM) && !defined(DAVINCI_BASI)
+#if !defined(DAVINCI_DM365EVM) && !defined(DAVINCI_BASI) \
+&& !defined(DAVINCI_LAGO)
 	enable_vbus();
 #endif
 	/* start the on-chip USB phy and its pll */

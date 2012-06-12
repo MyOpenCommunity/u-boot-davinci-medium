@@ -3041,6 +3041,7 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_SPEAR900             3061
 #define MACH_TYPE_PCONTROL_G20         3062
 #define MACH_TYPE_DINGO                3337
+#define MACH_TYPE_LAGO                 4227
 
 #ifdef CONFIG_ARCH_EBSA110
 # ifdef machine_arch_type
@@ -39390,6 +39391,17 @@ extern unsigned int __machine_arch_type;
 # define machine_is_dingo()	(0)
 #endif
 
+#ifdef CONFIG_MACH_LAGO
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_LAGO
+# endif
+# define machine_is_lago()	(machine_arch_type == MACH_TYPE_LAGO)
+#else
+# define machine_is_lago()	(0)
+#endif
 
 /*
  * These have not yet been registered
