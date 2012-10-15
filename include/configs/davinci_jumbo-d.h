@@ -20,12 +20,12 @@
 #ifndef __CONFIG_H
 #define __CONFIG_H
 
-/* Bticino Dingo board */
-#define DAVINCI_BASI
-#define BOARD_STRING "Basi"
+/* Bticino JUMBO board */
+#define DAVINCI_JUMBO-D
+#define BOARD_STRING "Jumbo-d"
 
 /* RAM size */
-#define PHYS_SDRAM_1_SIZE		(128 << 20)	/* 128 MiB */
+#define PHYS_SDRAM_1_SIZE		(256 << 20)	/* 256 MiB */
 
 /* SD/MMC */
 #define CONFIG_MMC
@@ -33,8 +33,8 @@
 
 #undef CONFIG_USB_DAVINCI
 #undef CONFIG_MUSB_HCD         /* include support for usb host */
-#define CONFIG_USBD_PRODUCTID          0x1122
-#define CONFIG_USBD_PRODUCT_NAME       "basi"
+#define CONFIG_USBD_PRODUCTID          0x1122 /* TODO */
+#define CONFIG_USBD_PRODUCT_NAME       "jumbo-d"
 
 #include "bt_medium.h"
 

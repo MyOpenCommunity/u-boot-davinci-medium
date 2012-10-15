@@ -64,7 +64,6 @@
 /* Memory Info */
 #define CONFIG_NR_DRAM_BANKS		1
 #define PHYS_SDRAM_1			0x80000000
-#define PHYS_SDRAM_1_SIZE		(128 << 20)	/* 128 MiB */
 #define CONFIG_MAX_RAM_BANK_SIZE	(256 << 20)	/* Max supported */
 #define BASELINE_LOADER_VERSION_ADDRESS	0x81000000
 
@@ -214,7 +213,7 @@
 #define CONFIG_EXTRA_ENV_SETTINGS \
 	"ubootver=" U_BOOT_VERSION "\0" \
 	"verify=no" "\0" \
-	"silent=yes" "\0"
+	"silnt=yes" "\0"
 
 #define CONFIG_ZERO_BOOTDELAY_CHECK
 #define CONFIG_AUTOBOOT_KEYED

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009 Texas Instruments Incorporated
+ * Copyright (C) 2012 Bticino S.p.A. 
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -23,6 +23,9 @@
 /* Bticino Dingo board */
 #define DAVINCI_DINGO
 #define BOARD_STRING "Dingo"
+
+/* RAM size */
+#define PHYS_SDRAM_1_SIZE		(128 << 20)	/* 128 MiB */
 
 /* SD/MMC */
 #undef CONFIG_MMC

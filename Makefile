@@ -969,6 +969,12 @@ davinci_lago_config :	unconfig
 davinci_dingo_config :	unconfig
 	@$(MKCONFIG) $(@:_config=) arm arm926ejs dingo davinci davinci
 
+davinci_jumbo-d_config : unconfig
+	@$(MKCONFIG) $(@:_config=) arm arm926ejs jumbo-d davinci davinci
+
+davinci_jumbo-i_config : unconfig
+	@$(MKCONFIG) $(@:_config=) arm arm926ejs jumbo-i davinci davinci
+
 davinci_dm6467evm_config :	unconfig
 	@$(MKCONFIG) $(@:_config=) arm arm926ejs dm6467evm davinci davinci
 
