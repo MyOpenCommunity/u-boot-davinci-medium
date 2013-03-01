@@ -975,6 +975,12 @@ davinci_jumbo-d_config : unconfig
 davinci_jumbo-i_config : unconfig
 	@$(MKCONFIG) $(@:_config=) arm arm926ejs jumbo-i davinci davinci
 
+davinci_amico-i_config : unconfig
+	@$(MKCONFIG) $(@:_config=) arm arm926ejs amico-i davinci davinci
+
+davinci_amico-e_config : unconfig
+	@$(MKCONFIG) $(@:_config=) arm arm926ejs amico-e davinci davinci
+
 davinci_dm6467evm_config :	unconfig
 	@$(MKCONFIG) $(@:_config=) arm arm926ejs dm6467evm davinci davinci
 
